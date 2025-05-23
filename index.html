@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
      <link href="img/favicon.ico" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
     <link href="img/favicon.ico" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -39,37 +39,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
-       <header class="site-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header-logo">
-                        <a href="index.html">
-                            <img src="assets/images/rd.webp" width="60" height="36" alt="Logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="main-navigation">
-                        <button class="menu-toggle"><span></span><span></span></button>
-                        <nav class="header-menu">
-                            <ul class="menu food-nav-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="About.html">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+    <nav>
+            <div class="logo">
+                <h1>Trends</h1>
             </div>
-        </div>
-    </header>
-    <!-- header ends  -->
-
+            <ul>
+                <li>
+                    <a id="home" onclick="home()">Home</a>
+                    <a id="shop" onclick="shop()">Shops</a>
+                    <a id="blog" onclick="blog()">Blog</a>
+                    <a id="about" onclick=" about()">About</a>
+                    <a id="contact" onclick="contact()">Contact</a>
+                    <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </nav>
     <div id="viewport">
         <div id="js-scroll-content">
             <section class="main-banner" id="home">
@@ -146,7 +133,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="assets/images/anjali.webp" alt="">
+                    <img class="card-img-top" src="../food-website-main/assets/images/anjali.webp" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Gungun Guptra</h5>
@@ -163,7 +150,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="assets/images/anjali.webp" alt="">
+                    <img class="card-img-top" src="../food-website-main/assets/images/anjali.webp" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Anjli arora</h5>
@@ -180,7 +167,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team card position-relative overflow-hidden border-0 mb-4">
-                    <img class="card-img-top" src="assets/images/anjali.webp" alt="">
+                    <img class="card-img-top" src="../food-website-main/assets/images/anjali.webp" alt="">
                     <div class="card-body text-center p-0">
                         <div class="team-text d-flex flex-column justify-content-center bg-light">
                             <h5>Carry Minathi</h5>
@@ -198,9 +185,12 @@
         </div>
     </div>        
     <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
 <!-- Testimonial Start -->
-        <div class="container-fluid bg-light my-5 p-0 py-5">
-       		 <div class="container p-0 py-5">
+    <div class="container-fluid bg-light my-5 p-0 py-5">
+        <div class="container p-0 py-5">
             <div class="d-flex flex-column text-center mb-5">
                 <h4 class="text-secondary mb-3">Testimonial</h4>
                 <h1 class="display-4 m-0">Our Client <span class="text-primary">Says</span></h1>
@@ -431,12 +421,9 @@
                             </div>
                         </div>
                 </div>
-            </div>      
+            </div>
+        </div>    
     <!-- Testimonial End -->
-
-    <!-- Blog Start -->
-   
-    <!-- Blog End -->
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="row pt-5">
@@ -526,8 +513,8 @@
 
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/index.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
